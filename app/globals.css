@@ -14,7 +14,17 @@
   }
 }
 
-body {
+/* Prevent horizontal scrolling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
